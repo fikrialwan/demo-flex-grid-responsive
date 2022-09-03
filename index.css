@@ -1,0 +1,12 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.flex-item {
+  flex-basis: 15em;
+  flex-grow: 1;
+  background-color: red;
+  height: 15em;
+}
