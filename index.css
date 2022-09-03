@@ -10,3 +10,55 @@
   background-color: red;
   height: 15em;
 }
+
+.grid {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "side main"
+    "side foot";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2em 1fr 1.5em;
+  gap: 0.25em;
+}
+
+.grid div {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: red;
+}
+
+.side {
+  grid-area: side;
+  background-color: blue;
+}
+
+.main {
+  grid-area: main;
+  background-color: green;
+}
+
+.foot {
+  grid-area: foot;
+  background-color: orange;
+}
+
+@media screen and (max-width: 50em) {
+  .grid {
+    grid-template-areas:
+      "nav nav"
+      "main main"
+      "foot foot";
+  }
+
+  .grid .side {
+    display: none;
+  }
+}
