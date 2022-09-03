@@ -47,10 +47,11 @@ ul.nav-list {
 }
 
 .flex-item {
-  flex-basis: 15em;
+  flex-basis: 5em;
   flex-grow: 1;
   background-color: red;
-  height: 15em;
+  /* height: 15em; */
+  aspect-ratio: 1/1;
 }
 
 .grid {
